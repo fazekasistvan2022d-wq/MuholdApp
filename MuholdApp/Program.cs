@@ -68,9 +68,9 @@ Console.WriteLine();
 Console.WriteLine("Kutatási műholdak külön értelmezése:");
 foreach (var item in muholdak)
 {
-    if(item is KutatasiMuhold kutat)
+    if(item is KutatasiMuhold km)
     {
-        Console.WriteLine($"- {kutat.Azonosito} kutatási máhold műszereinek száma: {kutat.MuszerekSzama} db.");
+        Console.WriteLine($"- {km.Azonosito} kutatási máhold műszereinek száma: {km.MuszerekSzama} db.");
     }
 }
 Console.WriteLine();
