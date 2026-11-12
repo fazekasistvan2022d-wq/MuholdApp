@@ -12,7 +12,7 @@ namespace MuholdApp
             get { return sulyKg; }
             set
             {
-                if (value >= 0)
+                if (value <= 0)
                 {
                     sulyKg = 100;
                 }
@@ -39,7 +39,7 @@ namespace MuholdApp
         }
         public override string ToString()
         {
-            return $"Műhold {Azonosito} | Tömeg: {sulyKg} | Napi költség: {NapiKoltseg()} EUR";
+            return $"Műhold {Azonosito} | Tömeg: {sulyKg} kg | Napi költség: {NapiKoltseg()} EUR";
         }
     }
 }
